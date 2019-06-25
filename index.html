@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Picture Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h3>Item #1</h3>
+<table>
+    <tr>
+        <td>
+            <img src="photo/1-small.jpg" id="mainPhoto"/>
+            <div id="zoom"></div>
+            <div id="previews">
+                <img src="photo/1-small.jpg" class="previewPhoto previewPhotoActive"/>
+                <img src="photo/2-small.jpg" class="previewPhoto"/>
+                <img src="photo/3-small.jpg" class="previewPhoto"/>
+                <img src="photo/4-small.jpg" class="previewPhoto"/>
+            </div>
+        </td>
+        <td>
+            <ul>
+                <li>Price</li>
+                <li>Description</li>
+                <li>Additional info</li>
+                <li>etc</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+<div class="background" id="bigPhotos_background"></div>
+<div id="bigPhotos">
+    <table>
+        <tr>
+            <td class="previewsBigPhoto">
+                <img src="photo/1-small.jpg" class="previewBigPhoto previewPhotoActive"/><br/>
+                <img src="photo/2-small.jpg" class="previewBigPhoto"/><br/>
+                <img src="photo/3-small.jpg" class="previewBigPhoto"/><br/>
+                <img src="photo/4-small.jpg" class="previewBigPhoto"/><br/>
+            </td>
+            <td class="bigPhotoMainBlock">
+                <img src="photo/1-big.jpg" id="bigPhotoMain"/>
+            </td>
+            <td class="bigPhotoClose">
+                <div id="close_bigPhotos" class="bigPhotos-btn-close" title="Close">
+                    X
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="zoomsl-3.0.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
