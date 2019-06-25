@@ -41,6 +41,9 @@ $('#close_bigPhotos,#bigPhotos_background').click(function(){
 // Choosing big photo by preview click in big photos block
 $('.previewBigPhoto').click(function(){
     var src = $(this).attr('src');
+    $('#mainPhoto').attr('src',$(this).attr('src'));
+    $('.previewPhotoActive').removeClass('previewPhotoActive');
+    $('.previewPhoto[src="'+src+'"]').addClass('previewPhotoActive');
     src = src.replace('small', 'big');
     $('#bigPhotoMain').attr('src',src);
     $('.previewBigPhotoActive').removeClass('previewBigPhotoActive');
